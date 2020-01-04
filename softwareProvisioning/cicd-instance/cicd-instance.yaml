@@ -1,25 +1,25 @@
 ---
-- hosts: cicd-instance
+- hosts: cicd-instance-2
   roles: 
   - role: java-role
     become: yes 
 
-- hosts: cicd-instance
+- hosts: cicd-instance-2
   roles:
   - role: git-role
     become: yes
 
-- hosts: cicd-instance
+- hosts: cicd-instance-2
   roles:
   - role: python-role
     become: yes
 
-- hosts: cicd-instance
+- hosts: cicd-instance-2
   roles:
   - role: jenkins-role
     become: yes
 
-- hosts: cicd-instance
+- hosts: cicd-instance-2
   roles:
   - role: docker-role
     become: yes    
