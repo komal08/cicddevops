@@ -1,0 +1,5 @@
+---
+- hosts: testing-instance-4
+  roles:
+    - role: sonarqube-role
+      become: yes
