@@ -1,12 +1,12 @@
 ---
-- hosts: artifactory-instance
+- hosts: artifactory-instance-3
   roles:
   - role: geerlingguy.docker
     become: yes
     vars:
       docker_edition: 'ce'
      
-- hosts: artifactory-instance
+- hosts: artifactory-instance-3
   roles:
   - role : artifactory-instance-role
     become: yes
